@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  font-family: "Courier New", Courier, monospace;
+  background-image: url("assets/backgrounds/repertorio-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #f472b6;
+}
+
+.intro {
+  font-style: italic;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.listado {
+  list-style: none;
+  padding: 0;
+}
+
+.listado li {
+  margin: 1rem 0;
+}
+
+.listado a {
+  color: #e0e7ff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.listado a:hover {
+  color: #f472b6;
+}

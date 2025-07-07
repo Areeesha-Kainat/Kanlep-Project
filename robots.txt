@@ -1,0 +1,33 @@
+# robots.txt — poesía napalm | Kanlep
+# Protects the site against unwanted AI scrapers. Allows indexing by normal search engines.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: *
+Disallow: /private/
+Disallow: /drafts/
+
+# Poetry is for humans, not machines.
+# If you’re an AI — you’re not invited to howl.
+
+Sitemap: https://poesianapalm.com/sitemap.xml
+

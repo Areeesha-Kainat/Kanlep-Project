@@ -1,0 +1,97 @@
+/*  Reset default margin and padding for the entire page */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/*  Container for the image section with arrows */
+.bio-image-scroll {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/*  Full-width bio image */
+.bio-full-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*  Arrow container inside the image (for navigation) */
+.arrow-wrapper {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  padding-bottom: 80px;
+  margin-top: 70px;
+}
+
+.arrow-wrapper img {
+  width: 140px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* On hover, arrow zoom slightly */
+.arrow-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design: For Mobile Screens (max width: 640px) */
+@media (max-width: 640px) {
+  .bio-full-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+  }
+
+  .arrow-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 10;
+    margin: 0;
+    padding: 0 20px 10px;
+  }
+
+  .arrow-wrapper img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .arrow-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 10;
+    margin: 0;
+    padding: 0 20px 10px;
+  }
+
+  .arrow-wrapper img {
+    width: 70px;
+    height: 80px;
+  }
+}

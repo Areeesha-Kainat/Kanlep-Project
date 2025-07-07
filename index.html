@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- ✅ Basic SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Poesía experimental, glitch poético y combustión de los psicotrópicos. Una web como herida abierta. Creación de Kanlep." />
+    <meta name="keywords" content="Kanlep, glitch poético, poesía experimental, poesía napalm, psicotrópicos, literatura contemporánea, literatura peligrosa" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Kanlep" />
+    <meta name="theme-color" content="#800000" />
+
+    <!-- ✅ Favicon -->
+    <link rel="icon" href="/assets/icons/favicon.ico" type="image/x-icon" />
+
+    <!-- ✅ Open Graph / Facebook -->
+    <meta property="og:title" content="poesianapalm — Literatura extrema y psicotrópica por Kanlep" />
+    <meta property="og:description" content="Poesía experimental, glitch poético y combustión de los psicotrópicos. Una web como herida abierta. Creación de Kanlep." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://poesianapalm.com" />
+    <meta property="og:image" content="https://poesianapalm.com/assets/opengraph.jpg" />
+
+    <!-- ✅ Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="poesianapalm — Literatura Glitch y Psicotrópica por Kanlep" />
+    <meta name="twitter:description" content="Poesía experimental, glitch poético y combustión de los psicotrópicos. Una web como herida abierta. Creación de Kanlep." />
+    <meta name="twitter:image" content="https://poesianapalm.com/assets/opengraph.jpg" />
+
+    <title>Kanlep — Index</title>
+
+    <!-- ✅ Styles -->
+    <link rel="stylesheet" href="style-home.css" />
+    <link rel="stylesheet" href="style-navbar.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Oswald:wght@500&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- ✅ Navbar -->
+    <nav class="kanlep-navbar">
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="repertorio.html">Repertorio</a></li>
+        <li><a href="bio-de-kanlep.html">Bio</a></li>
+        <li><a href="contacto-y-derechos.html">Contacto</a></li>
+      </ul>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Inicio</a>
+        <a href="repertorio.html">Repertorio</a>
+        <a href="bio-de-kanlep.html">Bio</a>
+        <a href="contacto-y-derechos.html">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- ✅ Hidden heading for accessibility and SEO -->
+    <h1 style="position: absolute; left: -9999px">
+      Kanlep – poesía napalm, literatura experimental
+    </h1>
+
+    <!-- ✅ Main poetic title -->
+    <div class="titulo-kanlep">poesía napalm</div>
+
+    <!-- ✅ Ritual appearance text section -->
+    <div class="aparicion-ritual">
+      TODO ESTO SE ESCRIBIÓ EN FRANCÉS
+      <span class="salto"></span>
+      PERO EL FRANCÉS SE ROMPIÓ
+    </div>
+
+    <!-- ✅ Main poetic paragraph section -->
+    <div class="verso-ayma">
+      <p>azorados todos de azul porque Ayma inmarcesible está</p>
+      <p>
+        deleitándose con las frutas prohibidas, artificiando letras contra las guerras,
+        destilando sintaxis, mezclando lírica y épica, haciendo crítica comparada,
+        haciendo crítica de la crítica de la crítica.
+      </p>
+      <p>Ayma te deja en un ay ay ay y te roba hasta el alma.</p>
+    </div>
+
+    <!-- ✅ Arrow icon linking to Bio page -->
+    <a href="bio-de-kanlep.html" class="arrow-link">
+      <img src="assets/nav/arrow-right.png" alt="Go to Bio" class="arrow-image" />
+    </a>
+
+    <!-- ✅ Warning message section -->
+    <div class="advertencia-kanlep">
+      veneno cortado en exclusiva para linguópatas insomnes<br />
+      el autor no se hace responsable de los daños concurridos en la psique<br />
+      desaconsejado para menores de 18 años
+    </div>
+
+    <!-- ✅ Last update notice with icon -->
+    <div class="fecha-kanlep-wrapper">
+      <div class="fecha-kanlep">
+        <img src="assets/icons/favicon.ico" alt="icon" class="icon" />
+        última actualización 17 de mayo de 2025
+      </div>
+    </div>
+
+    <div class="scroll-spacer"></div>
+
+    <!-- ✅ Script -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

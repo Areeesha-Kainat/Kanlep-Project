@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Basic SEO -->
+    <title>Repertorio — poesianapalm</title>
+    <meta
+      name="description"
+      content="Repertorio de textos, artefactos y residuos poéticos. Por Kanlep."
+    />
+    <meta
+      name="keywords"
+      content="Kanlep, repertorio, poesía experimental, literatura glitch, archivo"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Kanlep" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#800000" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Repertorio — poesianapalm" />
+    <meta
+      property="og:description"
+      content="Repertorio de textos, artefactos y residuos poéticos. Por Kanlep."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://poesianapalm.com/repertorio" />
+    <meta
+      property="og:image"
+      content="https://poesianapalm.com/assets/opengraph.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Repertorio — poesianapalm" />
+    <meta
+      name="twitter:description"
+      content="Repertorio de textos, artefactos y residuos poéticos. Por Kanlep."
+    />
+    <meta
+      name="twitter:image"
+      content="https://poesianapalm.com/assets/opengraph.jpg"
+    />
+
+    <link rel="stylesheet" href="style-repertorio.css" />
+    <link rel="stylesheet" href="style-navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar inserted -->
+    <nav class="kanlep-navbar">
+      <!--  Hamburger icon for mobile menu toggle -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <!--  Navigation links for desktop view -->
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="repertorio.html">Repertorio</a></li>
+        <li><a href="bio-de-kanlep.html">Bio</a></li>
+        <li><a href="contacto-y-derechos.html">Contacto</a></li>
+      </ul>
+
+      <!-- Navigation links for mobile view (hidden by default) -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Inicio</a>
+        <a href="repertorio.html">Repertorio</a>
+        <a href="bio-de-kanlep.html">Bio</a>
+        <a href="contacto-y-derechos.html">Contacto</a>
+      </div>
+    </nav>
+
+    <!--  Main content section -->
+    <main class="container">
+      <!--  Hidden heading for screen readers and SEO -->
+      <h1>
+        <span style="position: absolute; left: -9999px">
+          Kanlep – archivo de poesía inflamable, repertorio de visiones y
+          delirios
+        </span>
+        Repertorio
+      </h1>
+
+      <!--  Introductory line below heading -->
+      <p class="intro">en busca del sueño beleño</p>
+
+      <!-- List of archive links -->
+      <ul class="listado">
+        <li><a href="archivo-001.html">archivo #001</a></li>
+        <li><a href="archivo-002.html">archivo #002</a></li>
+        <li><a href="archivo-003.html">archivo #003</a></li>
+        <li><a href="archivo-004.html">archivo #004</a></li>
+        <li><a href="archivo-005.html">archivo #005</a></li>
+        <li><a href="archivo-006.html">archivo #006</a></li>
+        <li><a href="archivo-007.html">archivo #007</a></li>
+        <li><a href="archivo-008.html">archivo #008</a></li>
+        <li><a href="archivo-009.html">archivo #009</a></li>
+        <li><a href="archivo-0010.html">archivo #010</a></li>
+        <li><a href="archivo-0011.html">archivo #011</a></li>
+        <li><a href="archivo-0012.html">archivo #012</a></li>
+        <li><a href="archivo-0013.html">archivo #013</a></li>
+      </ul>
+    </main>
+  </body>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+  </script>
+</html>

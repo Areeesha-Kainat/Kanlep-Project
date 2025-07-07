@@ -1,0 +1,109 @@
+/* Main container */
+.archivo-container {
+  width: 100%;
+  min-height: 180vh; /* extra space for scroll effect */
+  background: url("assets/backgrounds/archivos-bg.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column; /* vertical layout */
+  align-items: center;
+
+  position: relative;
+}
+
+/* Arrows come after image */
+.archivo-container {
+  position: relative;
+}
+
+/* ✅ Default: Mobile & Tablet */
+.archivo-arrows {
+  position: static;                /* not fixed to bottom */
+  margin-top: 1.5rem;              /* approx. two lines below image */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ✅ Desktop: Float arrows over the middle of image */
+@media (min-width: 769px) {
+  .archivo-container {
+    position: relative;           /* enable absolute positioning for children */
+  }
+
+  .archivo-arrows {
+    position: absolute;
+    top: 50%;                     /* vertical center */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);  /* adjust for true center */
+    padding: 0 2rem;              /* horizontal padding inside image */
+    margin: 0;                    /* override mobile margin */
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+.archivo-arrows img {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.archivo-arrows img:hover {
+  transform: scale(1.1);
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Image with animation */
+.archivo-image {
+  max-width: 90%;
+  width: 90%;
+  height: auto;
+  animation: slideUp 1s ease-out forwards;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+
+@media (max-width: 668px) {
+  .archivo-container {
+    min-height: 100vh;
+  }
+
+  .archivo-image {
+    max-width: 100%;
+    width: 100%;
+    height: 90vh;
+    animation: slideUp 1s ease-out forwards;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+  }
+}
+
+/* Reduce the image size by about 30% */
+.smaller-archivo-image {
+  width: 63%;
+  max-width: 63%;
+}
+
+@media (max-width: 768px) {
+  .smaller-archivo-image {
+    width: 90%; /* back to mobile-friendly size */
+    max-width: 90%;
+  }
+}

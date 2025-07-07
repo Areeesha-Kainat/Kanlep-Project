@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/assets/backgrounds/archivos-bg.png");
+  background-size: cover;
+  background-position: center;
+  color: #1a1a1a;
+  font-family: "Courier Prime";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1.kanlep-404 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+p.mensaje-404 {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  white-space: pre-line;
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #551a8b;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #0000ee;
+}
+
+@media (max-width: 354px) {
+  h1.kanlep-404 {
+    font-size: 2.5rem;
+  }
+}

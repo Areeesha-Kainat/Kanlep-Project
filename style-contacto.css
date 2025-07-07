@@ -1,0 +1,102 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier Prime", monospace;
+  background-color: #000;
+  background-image: url("assets/backgrounds/licencia-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Styled pre block */
+.kanlep-pre {
+  text-align: center;
+  white-space: pre-wrap;
+  padding: 40px;
+  margin: 80px auto;
+  max-width: 850px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* Links inside pre */
+.kanlep-pre a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.kanlep-pre a:hover {
+  color: crimson;
+}
+
+b {
+  font-size: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kanlep-pre {
+    margin: 40px 20px;
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  b {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kanlep-pre {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  b {
+    font-size: 20px;
+  }
+
+  .link {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .kanlep-pre {
+    margin: 40px 20px;
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+.back-arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.back-arrow img {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.back-arrow img:hover {
+  transform: scale(1.15);
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+  .back-arrow img {
+    width: 28px;
+  }
+}

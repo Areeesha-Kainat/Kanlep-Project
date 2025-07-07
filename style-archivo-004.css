@@ -1,0 +1,83 @@
+body {
+  background-image: url("assets/backgrounds/archivos-bg.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "Courier New";
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-archivo {
+  font-size: 48px;
+  color: #1a1a1a;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  white-space: nowrap;
+}
+
+@keyframes unblur {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.poesia-congelada {
+  padding: 40px;
+  color: black;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  line-height: 2.5rem;
+  opacity: 0;
+  animation: unblur 1.5s ease-out 0.5s forwards;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 1.5px;
+  padding-right: 1.5px;
+}
+
+@media (max-width: 354px) {
+  .mobile-version-text {
+    font-size: 40px;
+  }
+}
+
+.arrow {
+  position: fixed;
+  bottom: 40px;
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+.archivo-arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+
+  margin-top: 7rem;
+}
+
+.archivo-arrows img {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.archivo-arrows img:hover {
+  transform: scale(1.1);
+}

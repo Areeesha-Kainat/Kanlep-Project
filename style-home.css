@@ -1,0 +1,209 @@
+/* Global background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier Prime", monospace, "Space Grotesk";
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/backgrounds/index-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+/* titulo-kanlep */
+
+.titulo-kanlep {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3rem; /* scalable */
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1), -2px -2px 3px rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 20px auto 40px auto;
+  max-width: 90%;
+  width: fit-content;
+}
+
+/* 💡 Mobile adjustments */
+@media (max-width: 768px) {
+  .titulo-kanlep {
+    font-size: 2.2rem;
+    padding: 8px;
+    max-width: 95%;
+  }
+}
+
+/* 💡 Tiny screens */
+@media (max-width: 480px) {
+  .titulo-kanlep {
+    font-size: 1.8rem;
+    padding: 6px;
+  }
+}
+
+/* aparicion-ritual */
+@keyframes emergerDelFuego {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes desvanecerseAlInfierno {
+  to {
+    opacity: 0;
+  }
+}
+
+.aparicion-ritual {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: emergerDelFuego 2s ease-out 0.5s forwards,
+    desvanecerseAlInfierno 2s ease-in 5s forwards;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f2f0ec;
+  letter-spacing: 0.05em;
+  margin: 4rem auto;
+  margin-top: 10%;
+}
+
+.aparicion-ritual .salto {
+  display: block;
+  height: 2rem;
+}
+
+/* verso-ayma */
+.verso-ayma {
+  color: #ffffff;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  line-height: 1.8;
+  max-width: 70%;
+  margin: 20px auto;
+  text-align: justify;
+  border-left: 4px solid crimson;
+  border-right: 4px solid crimson;
+}
+
+.verso-ayma p {
+  text-indent: 2em;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+}
+
+/* advertencia-kanlep */
+.advertencia-kanlep {
+  position: relative;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  font-weight: medium;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7),
+    -1px -1px 1px rgba(255, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  line-height: 2;
+  max-width: 70%;
+  margin: 30px auto;
+  text-align: center;
+  border-top: 2px solid crimson;
+  border-bottom: 2px solid crimson;
+  margin-top: 7%;
+}
+
+/* fecha-kanlep */
+
+/* Wrapper aligns content to right */
+.fecha-kanlep-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
+/* Inside content: text + icon horizontally */
+.fecha-kanlep {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 13.5px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+/* Icon size */
+.fecha-kanlep .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fecha-kanlep-wrapper {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .fecha-kanlep {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fecha-kanlep {
+    font-size: 11px;
+  }
+}
+
+/* Optional: Shared spacing for all main Kanlep blocks */
+.titulo-kanlep,
+.verso-ayma,
+.fecha-kanlep {
+  margin-top: 20%;
+}
+.arrow-link {
+  display: block;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.arrow-image {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 15%;
+}
+
+.arrow-image:hover {
+  transform: translateX(5px); /* Subtle hover effect */
+}
+
+/* Spacer div for scroll */
+.scroll-spacer {
+  height: 170px;
+  width: 100%;
+}
